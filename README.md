@@ -1,7 +1,9 @@
 # OutfitsProject
 The backend database and route implementation for a theoretical app that allows users to mix and match outfits with clothing items found on the internet.
 
-The database includes three tables: users, outfits, and clothes. The users table is a list of users using this application, the outfits table is a list of outfits, each with a foreign key attributed to a user and secondary keys associated with a top and a bottom from the clothes table, and the clothes table is a list of either tops or bottoms, all of which are .jpeg or .png files simultaneously stored in an aws bucket. 
+app.py contains all routes. db.py contains classes Users, Outfits, and Clothes as well as some helper functions for register, login, session, and secret routes. requirements.txt contains all required downloads to run application.
+
+The database includes three tables: users, outfits, and clothes. The users table is a list of users using this application, the outfits table is a list of outfits, each with a foreign key attributed to a user and secondary keys associated with a top and a bottom from the clothes table, and the clothes table is a list of either tops or bottoms, all of which are .jpeg or .png files simultaneously stored in an AWS bucket. 
 
 21 routes implemented:
 
