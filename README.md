@@ -1,5 +1,6 @@
 # OutfitsProject
-The backend database and route implementation for a theoretical app that allows users to mix and match outfits with clothing items found on the internet.
+The backend database and route implementation for a theoretical app that allows users to visualize outfits by mixing and matching clothing items that they found on the internet.
+
 
 app.py contains all routes. db.py contains classes Users, Outfits, and Clothes as well as some helper functions for register, login, session, and secret routes. requirements.txt contains all required downloads to run application.
 
