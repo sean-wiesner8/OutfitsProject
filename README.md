@@ -14,6 +14,7 @@ Backend Framework: Flask
 
 Image File Storage: AWS S3 Bucket
 
+## Database
 
 The database includes three tables: users, outfits, and clothes. The users table is a list of users using this application, the outfits table is a list of outfits, each with a foreign key attributed to a user and secondary keys associated with a top and a bottom from the clothes table, and the clothes table is a list of either tops or bottoms, all of which are .jpeg or .png files simultaneously stored in an AWS bucket. 
 
