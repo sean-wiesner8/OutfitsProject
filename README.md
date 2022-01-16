@@ -2,11 +2,11 @@
 The backend database and route implementation for a theoretical app that allows users to visualize outfits by mixing and matching clothing items that they found on the internet.
 
 
-app.py contains all routes. db.py contains classes Users, Outfits, and Clothes as well as some helper functions for register, login, session, and secret routes. requirements.txt contains all required downloads to run application.
+app.py contains all routes. db.py contains SQLite database, implemented with SQLAlchemy, with classes "Users", "Outfits", and "Clothes", as well as some helper functions for register, login, session, and secret routes. requirements.txt contains all required downloads to run application.
 
 The database includes three tables: users, outfits, and clothes. The users table is a list of users using this application, the outfits table is a list of outfits, each with a foreign key attributed to a user and secondary keys associated with a top and a bottom from the clothes table, and the clothes table is a list of either tops or bottoms, all of which are .jpeg or .png files simultaneously stored in an AWS bucket. 
 
-21 routes implemented:
+## 21 routes implemented:
 
 POST /api/register/
 Pass in "username" and "password" fields to register a new user. Success response returns a unique base64 session token, session token expiration datetime, and base64 update token attributed to new user. Hashes password and stores password in database.
