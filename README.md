@@ -2,7 +2,7 @@
 The backend database and route implementation for a theoretical app that allows users to visualize outfits by mixing and matching clothing items that they found on the internet.
 
 
-## Tools Used
+## Tools, Libraries, Languages, and Services Used
 
 Database: SQLite
 
