@@ -3,10 +3,15 @@ The backend database and route implementation for a theoretical app that allows 
 
 
 ## Tools Used
+
 Database: SQLite
+
 ORM: SQLAlchemy
+
 Backend Language: Python
+
 Backend Framework: Flask
+
 Image File Storage: AWS S3 Bucket
 
 
