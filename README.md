@@ -2,7 +2,13 @@
 The backend database and route implementation for a theoretical app that allows users to visualize outfits by mixing and matching clothing items that they found on the internet.
 
 
-app.py contains all routes. db.py contains SQLite database, implemented with SQLAlchemy, with classes "Users", "Outfits", and "Clothes", as well as some helper functions for register, login, session, and secret routes. requirements.txt contains all required downloads to run application.
+## Tools Used
+Database: SQLite
+ORM: SQLAlchemy
+Backend Language: Python
+Backend Framework: Flask
+Image File Storage: AWS S3 Bucket
+
 
 The database includes three tables: users, outfits, and clothes. The users table is a list of users using this application, the outfits table is a list of outfits, each with a foreign key attributed to a user and secondary keys associated with a top and a bottom from the clothes table, and the clothes table is a list of either tops or bottoms, all of which are .jpeg or .png files simultaneously stored in an AWS bucket. 
 
@@ -87,8 +93,6 @@ Returns error if image data is invalid.
 DELETE /api/bottoms/<int:id>/
 Success response removes and returns specified bottom from database. 
 Returns error if id does not exist or if specified clothing item is not a bottom.
-
-
 
 
 
